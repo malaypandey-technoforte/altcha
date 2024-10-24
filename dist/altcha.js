@@ -442,7 +442,7 @@ function Ee(n, e, t, i) {
       case "Boolean":
         return e ? "" : null;
       case "Number":
-        return e ?? null;
+        return e !== undefined && e !== null ? e : null;
       default:
         return e;
     }
